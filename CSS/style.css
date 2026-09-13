@@ -838,3 +838,7 @@ body::before {
     }
 
 }
+
+.media-link-btn{
+    font-size: 10px;
+}
