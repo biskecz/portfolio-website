@@ -342,7 +342,6 @@ body::before {
     color: #666666;
 }
 
-/* Текст сообщения */
 .coment-body p {
     font-size: 10px;
     line-height: 1.6;
@@ -350,7 +349,6 @@ body::before {
     margin: 0;
 }
 
-/* Круглая пиксельная аватарка в комментарии */
 .avatar-coment {
     width: 45px;
     height: 45px;
@@ -401,9 +399,7 @@ body::before {
 }
 
 
-/* ============================= */
-/* PROJECTS PAGE                  */
-/* ============================= */
+
 
 .projects-header {
     text-align: center;
@@ -426,7 +422,6 @@ body::before {
 }
 
 
-/* PROJECT FEED */
 
 .projects-feed {
     width: 100%;
@@ -436,7 +431,6 @@ body::before {
 }
 
 
-/* PROJECT POST */
 
 .project-post {
     background: rgba(255, 255, 255, 0.9);
@@ -463,7 +457,6 @@ body::before {
 }
 
 
-/* POST HEADER */
 
 .project-post-header {
     display: flex;
@@ -500,7 +493,6 @@ body::before {
 }
 
 
-/* PROJECT CONTENT */
 
 .project-content {
     padding: 5px 5px 15px;
@@ -528,7 +520,6 @@ body::before {
 }
 
 
-/* POST FOOTER */
 
 .project-footer {
     display: flex;
@@ -549,7 +540,6 @@ body::before {
 }
 
 
-/* VIEW PROJECT BUTTON */
 
 .project-button {
     display: inline-block;
@@ -631,7 +621,6 @@ body::before {
         border-radius: 8px;
     }
 
-    /* NAVIGATION */
 
     .nav-bar {
         padding: 15px 10px;
@@ -657,7 +646,6 @@ body::before {
         text-align: center;
     }
 
-    /* MAIN CONTENT */
 
     .content-window {
         margin: 12px;
@@ -665,7 +653,6 @@ body::before {
         border-width: 2px;
     }
 
-    /* PROJECTS HEADER */
 
     .projects-header {
         margin-bottom: 20px;
@@ -682,13 +669,11 @@ body::before {
         line-height: 1.6;
     }
 
-    /* PROJECT FEED */
 
     .projects-feed {
         gap: 18px;
     }
 
-    /* PROJECT CARD */
 
     .project-post {
         padding: 12px;
@@ -698,7 +683,6 @@ body::before {
             3px 3px 0 rgba(0, 0, 0, 0.2);
     }
 
-    /* PROJECT HEADER */
 
     .project-post-header {
         padding-bottom: 10px;
@@ -726,7 +710,6 @@ body::before {
         font-size: 7px;
     }
 
-    /* PROJECT CONTENT */
 
     .project-content {
         padding: 3px 2px 12px;
@@ -762,7 +745,6 @@ body::before {
             2px 2px 0 #000000;
     }
 
-    /* GENERAL TEXT */
 
     .inner-page {
         padding: 15px;
@@ -777,7 +759,6 @@ body::before {
         line-height: 1.8;
     }
 
-    /* PROFILE */
 
     .profile-header {
         gap: 15px;
@@ -795,7 +776,6 @@ body::before {
 }
 
 
-/* SMALL PHONES */
 
 @media (max-width: 380px) {
 
