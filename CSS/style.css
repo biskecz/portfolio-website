@@ -399,3 +399,442 @@ body::before {
         transform: scale(1.12);
     }
 }
+
+
+/* ============================= */
+/* PROJECTS PAGE                  */
+/* ============================= */
+
+.projects-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #0055ea;
+}
+
+.projects-header h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #003ba8;
+    text-shadow: 2px 2px 0 #ffffff;
+}
+
+.projects-header p {
+    margin: 0;
+    font-size: 10px;
+    color: #666666;
+}
+
+
+/* PROJECT FEED */
+
+.projects-feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* PROJECT POST */
+
+.project-post {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #0055ea;
+    border-radius: 6px;
+
+    box-shadow:
+        inset 1px 1px 0 #ffffff,
+        4px 4px 0 rgba(0, 0, 0, 0.2);
+
+    padding: 18px;
+
+    transition:
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+.project-post:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        inset 1px 1px 0 #ffffff,
+        6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* POST HEADER */
+
+.project-post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px dashed #0055ea;
+}
+
+.project-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.project-author-name {
+    font-size: 11px;
+    color: #003ba8;
+    font-weight: bold;
+}
+
+.project-date {
+    font-size: 8px;
+    color: #666666;
+}
+
+
+/* PROJECT CONTENT */
+
+.project-content {
+    padding: 5px 5px 15px;
+}
+
+.project-content h3 {
+    margin-bottom: 18px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    color: #003ba8;
+
+    text-shadow:
+        1px 1px 0 #ffffff;
+}
+
+.project-content p {
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 1.8;
+
+    color: #1a1a1a;
+}
+
+
+/* POST FOOTER */
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 15px;
+
+    border-top: 1px dashed #0055ea;
+}
+
+.project-likes {
+    font-size: 9px;
+    color: #cc0000;
+
+    text-shadow:
+        1px 1px 0 #ffffff;
+}
+
+
+/* VIEW PROJECT BUTTON */
+
+.project-button {
+    display: inline-block;
+
+    padding: 10px 14px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: "Press Start 2P", cursive;
+    font-size: 8px;
+
+    background: linear-gradient(
+        180deg,
+        #4f9cff 0%,
+        #0055d4 50%,
+        #00358f 100%
+    );
+
+    border: 3px solid #001f70;
+    border-radius: 5px;
+
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.6),
+        3px 3px 0 #000000;
+
+    text-shadow:
+        1px 1px 0 #000000;
+
+    transition:
+        background 0.1s ease,
+        transform 0.1s ease,
+        box-shadow 0.1s ease;
+}
+
+.project-button:hover {
+    background: linear-gradient(
+        180deg,
+        #79b5ff 0%,
+        #176ce8 50%,
+        #0046b8 100%
+    );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.8),
+        3px 5px 0 #000000;
+}
+
+.project-button:active {
+    transform: translate(2px, 2px);
+
+    box-shadow:
+        inset 0 1px 0 rgba(0, 0, 0, 0.4),
+        1px 1px 0 #000000;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        display: block;
+        min-height: 100vh;
+    }
+
+    body::before {
+        width: 120%;
+        height: 120%;
+        left: -10%;
+        top: -10%;
+    }
+
+    .main-container {
+        width: calc(100% - 20px);
+        min-height: auto;
+        margin: 10px auto;
+        border-width: 3px;
+        border-radius: 8px;
+    }
+
+    /* NAVIGATION */
+
+    .nav-bar {
+        padding: 15px 10px;
+        gap: 12px;
+    }
+
+    .web-name {
+        font-size: 13px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .nav-f-btn {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .nav-f-btn a {
+        flex: 1;
+        min-width: 80px;
+        padding: 11px 8px;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    /* MAIN CONTENT */
+
+    .content-window {
+        margin: 12px;
+        padding: 12px;
+        border-width: 2px;
+    }
+
+    /* PROJECTS HEADER */
+
+    .projects-header {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+
+    .projects-header h2 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .projects-header p {
+        font-size: 8px;
+        line-height: 1.6;
+    }
+
+    /* PROJECT FEED */
+
+    .projects-feed {
+        gap: 18px;
+    }
+
+    /* PROJECT CARD */
+
+    .project-post {
+        padding: 12px;
+        border-width: 2px;
+        box-shadow:
+            inset 1px 1px 0 #ffffff,
+            3px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* PROJECT HEADER */
+
+    .project-post-header {
+        padding-bottom: 10px;
+        margin-bottom: 12px;
+    }
+
+    .project-author {
+        gap: 9px;
+    }
+
+    .avatar-coment {
+        width: 38px;
+        height: 38px;
+    }
+
+    .project-user-info {
+        gap: 4px;
+    }
+
+    .project-author-name {
+        font-size: 9px;
+    }
+
+    .project-date {
+        font-size: 7px;
+    }
+
+    /* PROJECT CONTENT */
+
+    .project-content {
+        padding: 3px 2px 12px;
+    }
+
+    .project-content h3 {
+        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .project-content p {
+        font-size: 8px;
+        line-height: 1.9;
+    }
+
+    /* PROJECT FOOTER */
+
+    .project-footer {
+        gap: 10px;
+        padding-top: 12px;
+    }
+
+    .project-likes {
+        font-size: 7px;
+    }
+
+    .project-button {
+        padding: 9px 10px;
+        font-size: 7px;
+        box-shadow:
+            inset 0 2px 0 rgba(255, 255, 255, 0.6),
+            2px 2px 0 #000000;
+    }
+
+    /* GENERAL TEXT */
+
+    .inner-page {
+        padding: 15px;
+    }
+
+    .inner-page h2 {
+        font-size: 15px;
+    }
+
+    .inner-page p {
+        font-size: 9px;
+        line-height: 1.8;
+    }
+
+    /* PROFILE */
+
+    .profile-header {
+        gap: 15px;
+    }
+
+    .avatar-container {
+        width: 110px;
+        height: 110px;
+    }
+
+    .profile-info {
+        min-width: 100%;
+    }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 380px) {
+
+    .main-container {
+        width: calc(100% - 12px);
+        margin: 6px auto;
+    }
+
+    .content-window {
+        margin: 8px;
+        padding: 9px;
+    }
+
+    .nav-f-btn a {
+        padding: 10px 5px;
+        font-size: 7px;
+    }
+
+    .project-post {
+        padding: 10px;
+    }
+
+    .project-content p {
+        font-size: 7px;
+        line-height: 2;
+    }
+
+    .project-content h3 {
+        font-size: 10px;
+    }
+
+    .project-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .project-button {
+        width: 100%;
+        text-align: center;
+    }
+
+}
